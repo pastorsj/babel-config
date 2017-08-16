@@ -1,0 +1,48 @@
+{
+  "name": "babel-config",
+  "version": "1.0.0",
+  "description": "A simple babel/webpack configiration for es7",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "webpack --env build",
+    "dev": "webpack --progress --colors --watch --env dev",
+    "test": "mocha --compilers js:babel-core/register --colors --timeout 5000 ./tests/**/*.test.js",
+    "test:watch": "mocha --compilers js:babel-core/register --colors --timeout 5000 -w ./tests/**/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pastorsj/babel-config.git"
+  },
+  "keywords": [
+    "babel",
+    "webpack",
+    "es7",
+    "es6"
+  ],
+  "author": "pastorsj",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pastorsj/babel-config/issues"
+  },
+  "homepage": "https://github.com/pastorsj/babel-config#readme",
+  "dependencies": {
+    "babel-runtime": "^6.25.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "7.2.3",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2017": "^6.24.1",
+    "chai": "^4.1.1",
+    "eslint": "^4.4.1",
+    "eslint-loader": "^1.9.0",
+    "mocha": "^3.5.0",
+    "sinon": "^3.2.0",
+    "sinon-chai": "^2.13.0",
+    "webpack": "^3.5.4",
+    "yargs": "^8.0.2"
+  }
+}
